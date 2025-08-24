@@ -130,8 +130,7 @@ const productosData: IProducto[] = [
     categoria: ICategorias.Musica,
   },
 ];
-
-export const ProductsPage = () => {
+const ProductsPage = () => {
   const [searchParams] = useSearchParams();
   const filtroActivo = searchParams.get("categoria");
   const listaFiltrada = productosData.filter(
@@ -157,3 +156,5 @@ export const ProductsPage = () => {
     </>
   );
 };
+
+export default ProductsPage

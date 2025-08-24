@@ -1,8 +1,8 @@
 import { createBrowserRouter, redirect } from "react-router-dom";
 import { AppLayout } from "./layouts/appLayout";
-import { ProductsPage } from "../features/products/pages/ProductsPage";
-import { ProductDetail } from "../features/products/pages/ProductDetail";
+import ProductsPage from "../features/products/pages/ProductsPage";
 
+const productsDetail=() => import('../features/products/pages/ProductDetail').then(m => ({Component:m.ProductDetail}))
 
 const routerApp=createBrowserRouter([
     {
@@ -18,7 +18,7 @@ const routerApp=createBrowserRouter([
             },
             {
                 path:'products/:id',
-                element:<ProductDetail/>
+                lazy:productsDetail
             }
         ]
     }
