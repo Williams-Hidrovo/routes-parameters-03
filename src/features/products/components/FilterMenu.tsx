@@ -22,6 +22,7 @@ export const FilterMenu = () => {
         <option value={ICategorias.Gamer}>Gamer</option>
         <option value={ICategorias.Musica}>Musica</option>
         <option value={ICategorias.Telefonos}>Telefonos</option>
+        <option value={ICategorias.Componentes}>Componentes</option>
       </select>
 
       <button onClick={handleNavigate}>

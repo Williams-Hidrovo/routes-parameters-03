@@ -3,7 +3,8 @@ export const ICategorias = {
   Telefonos: "Telefonos",
   Musica: "Musica",
   Electronicos: "Electronicos",
-  Gamer: "Gamer"
+  Gamer: "Gamer",
+  Componentes:'Componentes'
 } as const;
 
 // Tipo derivado automáticamente
